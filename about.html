@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <title>About Us</title>
+    <style>
+        /* Basic CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-family: Tahoma;
+            font-size: xx-large;
+            color: rgb(44, 210, 210);
+        }
+        h2{
+            font-family: Tahoma;
+            font-size: xx-large;
+            color: #3b08e3;
+        }
+
+        header {
+            color: #317ba9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .containers {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Vision and Mission section */
+        .vision-mission {
+            background-color: #a3f149;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .vision-mission h2 {
+            color: #333;
+        }
+
+        .vision-mission p {
+            font-size: 18px;
+            margin: 20px 0;
+            font-style: oblique;
+        }
+
+        /* Contact section */
+        .contact {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .contact-form {
+            text-align: center;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .animated {
+            animation: fadeIn 1s;
+        }
+        
+        .stat {
+            text-align: center;
+            margin: 0 20px;
+            flex: 1;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            font-size: 18px;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .animated {
+            animation: fadeIn 1s;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ef1df6;
+            color: #0d42ad;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav" style="padding-left: 30%; padding-right: 30%;">
+        <h1>HaCK<span>inno</span></h1>
+       
+        <ul id="nav-links">
+          <li><a href="problem_statement.html" onclick="showPage('problem-statement.html'); return false;" ontouchstart="showPage('problem-statement.html');">Problem Statement</a></li>
+          <li><a href="home.html" onclick="showPage('home.html'); return false;" ontouchstart="showPage('home.html');">Home</a></li>
+        </ul>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="space.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>About Ha<span>CK</span>inno</h1>
+    </header>
+    <div class="containers">
+        <div class="vision-mission animated">
+            <h2>About</h2>
+            <p>We are a student-led hackathon from <b>CK College of Engineering and Technology</b> that aims to promote innovation, creativity, and collaboration in the field of artificial intelligence. Our goal is to provide a platform for students to showcase their skills and ideas while learning from industry experts.</p>
+        </div><br>
+        <div class="vision-mission animated">
+            <h2>Our Mission</h2>
+            <p>Our mission is to inspire and empower the next generation of <b>AI innovators</b> by providing a platform for students to learn, build, and share their ideas.</p>
+        </div><br>
+        <div class="vision-mission animated">
+            <h2>Our Vision</h2>
+            <p>Our vision is to create a better world through innovation and technology. HaCKinno started out as a small idea among a group of passionate students who wanted to create a platform for their peers to learn, experiment, and collaborate in the field of AI. Over the years, we have grown into a community of like-minded individuals who are dedicated to promoting AI education and innovation. Our hackathons have attracted participants from all over the country, and we are proud to have helped launch the careers of many successful AI professionals. Our journey has been challenging, but also rewarding and fulfilling. We are excited to see what the future holds for HaCKinno and the AI community.</p>
+        </div>
+    </div>
+</body>
+</html>
