@@ -27,24 +27,26 @@
 }
 
 .problem-statement-container {
-    max-height: 400px;
-    overflow-y: auto;
-}
+            /* Set a maximum width for the container */
+            max-width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling if necessary */
+        }
 
-.box {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border: 3px solid #ff0095;
-    background-color: #d8b8c5;
-    margin: 10px 0;
-    border-radius: 5px;
-    transition: transform 0.2s ease-in-out;
-}
+        /* Problem statement boxes */
+        .box {
+            /* Adjust box styles as needed */
+            padding: 20px;
+            border: 3px solid #ff0095;
+            background-color: #d8b8c5;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
 
-.box:hover {
-    transform: translateX(2px);
-}
+        .box:hover {
+            transform: translateX(2px);
+        }
+        
 
 .problem-statement,
 .description {
