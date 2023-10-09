@@ -26,15 +26,15 @@
     margin-top: 80px;
 }
 
-.problem-statement-container {
-            /* Set a fixed maximum height for the container */
-            max-height: 400px; /* Adjust the height as needed */
+        .problem-statement-container {
+            max-height: 400px; /* Set a fixed maximum height for the container */
             overflow-y: auto; /* Enable vertical scrolling if necessary */
         }
 
         /* Problem statement boxes */
         .box {
-            /* Adjust box styles as needed */
+            display: flex;
+            justify-content: space-between;
             padding: 20px;
             border: 3px solid #ff0095;
             background-color: #d8b8c5;
@@ -42,7 +42,6 @@
             border-radius: 5px;
             transition: transform 0.2s ease-in-out;
         }
-
         .box:hover {
             transform: translateX(2px);
         }
