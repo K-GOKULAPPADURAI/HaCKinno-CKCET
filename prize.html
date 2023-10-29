@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    
+    <title>HaCKinno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="space.mp4" type="video/mp4">
+    </video>
+
+    <div id="content">
+        <div id="nav" style="padding-left: 30%; padding-right: 30%;">
+            <h1>HaCK<span>inno</span></h1>
+            <br>
+            <br>
+            <br>
+            <br>
+           
+           
+           
+            <ul id="nav-links">
+              <li><a href="index.html" onclick="showPage('index.html'); return false;" ontouchstart="showPage('index.html');">Home</a></li>
+              <li><a href="about.html" onclick="showPage('about.html'); return false;" ontouchstart="showPage('about.html');">About</a></li>
+              <li><a href="prize.html" onclick="showPage('prize.html'); return false;" ontouchstart="showPage('prize.html');">prize</a></li>
+
+
+
+          </ul>
+        </div>
+
+
+          </ul>
+        </div>
+    
+    <header>
+        <h1 style="margin-left: 20px;">Winners of Hackinno</h1>
+    </header>
+    <div class="winner gold" onclick="openPopup('tro.png', 'Team Name:xxx', 'Category: First Place<br>Prize: $1000')">
+        <img src="gold.png" alt="Gold Winner" height="300px" width="300px">
+        <h2>Gold Winner</h2>
+    </div>
+    <div class="winner silver" onclick="openPopup('silver.png', 'Silver Winner', 'Category: Second Place<br>Prize: $500')">
+        <img src="silver.png" alt="Silver Winner" height="300px" width="300px">
+        <h2>Silver Winner</h2>
+    </div>
+    <div class="winner bronze" onclick="openPopup('bronze.png', 'Bronze Winner', 'Category: Third Place<br>Prize: $250')">
+        <img src="bronze.png" alt="Bronze Winner" height="300px" width="300px">
+        <h2>Bronze Winner</h2>
+    </div>
+    <div class="winner bronze" onclick="openPopup('gm.png', 'Bronze Winner', 'Category: Third Place<br>Prize: $250')">
+        <img src="gm.png" alt="Bronze Winner" height="300px" width="300px">
+        <h2>Bronze Winner</h2>
+    </div>
+    <div class="winner bronze" onclick="openPopup('sm.png', 'Bronze Winner', 'Category: Third Place<br>Prize: $250')">
+        <img src="sm.png" alt="Bronze Winner" height="300px" width="300px">
+        <h2>Bronze Winner</h2>
+    </div>
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popup-image" src="" alt="">
+        <h2 id="popup-winner-name"></h2>
+        <p id="popup-details"></p>
+    </div>
+</body>
+<script>
+    function openPopup(imageSource, winnerName, details) {
+        const popup = document.getElementById("popup");
+        const popupImage = document.getElementById("popup-image");
+        const popupWinnerName = document.getElementById("popup-winner-name");
+        const popupDetails = document.getElementById("popup-details");
+
+        popupImage.src = imageSource;
+        popupWinnerName.innerText = winnerName;
+        popupDetails.innerHTML = details;
+
+        popup.style.display = "block";
+    }
+
+    function closePopup() {
+        const popup = document.getElementById("popup");
+        popup.style.display = "none";
+    }
+</script>
+</html>
